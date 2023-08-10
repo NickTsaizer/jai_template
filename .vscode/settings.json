@@ -1,0 +1,13 @@
+{
+    "files.exclude": {
+        "**/.build": true,
+    },
+    "search.exclude": {
+        "**/LICENSE": true,
+        "**/README.md": true,
+        "**/intermediate": true,
+        "**/.build": true,
+        "**/.vscode": true,
+        "**/binares": true,
+    }
+}

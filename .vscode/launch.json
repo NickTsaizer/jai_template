@@ -1,0 +1,27 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "program": "${workspaceFolder}/binares/${workspaceFolderBasename}.exe",
+            "name": "Launch",
+            "request": "launch",
+            "type": "cppvsdbg",
+            "cwd": ".",
+            "preLaunchTask": "build"
+        },
+        {
+            "name": "Debug",
+            "type": "windbg",
+            "request": "launch",
+            "sources": [
+                "${workspaceRoot}/src"
+            ],
+            "target": "${workspaceFolder}/binares/${workspaceFolderBasename}.exe",
+            "windbgpath": "C:/Program Files (x86)/Windows Kits/10/Debuggers/x64/dbgeng.dll",
+            "preLaunchTask": "build"
+        }
+    ]
+}
